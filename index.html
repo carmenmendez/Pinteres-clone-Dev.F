@@ -13,12 +13,14 @@
 </head>
 <body>
   <nav id="nav-bar-pinterest">
-    <a href="https://www.pinterest.com">
-      <img id="pinterest-icon" src="images/pinterest-icon.svg" alt="">
-    </a>
-    <a class="special-initial-a" href="">Inicio</a>
-    <a class="special-a" href="">Hoy</a>
-    <button>Crear</button>
+    <div class="nav-left">
+      <a href="https://www.pinterest.com">
+        <img id="pinterest-icon" src="images/pinterest-icon.svg" alt="">
+      </a>
+      <a class="nav-button active" href="">Inicio</a>
+      <a class="nav-button" href="">Hoy</a>
+      <button>Crear</button>
+    </div>
     <input  class="finder" type="text" placeholder="Buscar">
     <div class="nav-right">
       <img class="icon-nav notifications" src="images/bell-icon.svg" alt="">
@@ -27,46 +29,425 @@
     </div>
   </nav>
   <main id="content">
-    <img src="https://picsum.photos/200/300" alt="">
-    <img src="https://picsum.photos/id/237/200/300" alt="">
-    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
-    <img src="https://picsum.photos/id/100/200/300?grayscale" alt="">
-    <img src="https://picsum.photos/id/202/200/400" alt="">
-    <img src="https://picsum.photos/id/301/200/300" alt="">
-    <img src="https://picsum.photos/id/305/200/300" alt="">
-    <img src="https://picsum.photos/id/306/250/150" alt="">
-    <img src="https://picsum.photos/id/207/200/300" alt="">
-    <img src="https://picsum.photos/id/107/200/350" alt="">
-    <img src="https://picsum.photos/id/398/100/300" alt="">
-    <img src="https://picsum.photos/id/409/200/300" alt="">
-    <img src="https://picsum.photos/id/120/200/500" alt="">
-    <img src="https://picsum.photos/id/411/200/400" alt="">
-    <img src="https://picsum.photos/id/509/200/300" alt="">
-    <img src="https://picsum.photos/id/619/200/300"alt="">
-    <img src="https://picsum.photos/id/711/200/300" alt="">
-    <img src="https://picsum.photos/id/801/200/300" alt="">
-    <img src="https://picsum.photos/id/100/200/300?grayscale" alt="">
-    <img src="https://picsum.photos/id/719/200/300" alt="">
-    <img src="https://picsum.photos/id/629/200/300" alt="">
-    <img src="https://picsum.photos/id/639/200/300" alt="">
-    <img src="https://picsum.photos/id/819/200/400" alt="">
-    <img src="https://picsum.photos/id/419/200/300" alt="">
-    <img src="https://picsum.photos/id/346/200/150?grayscale" alt="">
-    <img src="https://picsum.photos/id/900/200/300" alt="">
-    <img src="https://picsum.photos/id/246/200/300?grayscale" alt="">
-    <img src="https://picsum.photos/id/233/200/300" alt="">
-    <img src="https://picsum.photos/id/403/200/400" alt="">
-    <img src="https://picsum.photos/id/706/200/300" alt="">
-    <img src="https://picsum.photos/id/245/200/300?grayscale" alt="">
-    <img src="https://picsum.photos/id/519/200/300" alt="">
-    <img src="https://picsum.photos/id/339/200/300" alt="">
-    <img src="https://picsum.photos/id/289/200/300" alt="">
-    <img src="https://picsum.photos/id/499/200/300" alt="">
-    <img src="https://picsum.photos/id/345/200/350?grayscale" alt="">
-    <img src="https://picsum.photos/id/849/200/300" alt="">
-    <img src="https://picsum.photos/id/445/200/300?grayscale" alt="">
-    <img src="https://picsum.photos/id/669/200/350" alt="">
-    <img src="https://picsum.photos/id/901/200/300" alt="">
+
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/900/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de HTML y CSS</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/237/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/217/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/427/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/350/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/430/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/611/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/509/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/408/200/500" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/325/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/780/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/642/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/569/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/487/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/341/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/378/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/661/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/536/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/493/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/283/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/386/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/457/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/783/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/653/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/257/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/331/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/227/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/608/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+    <article class="card">
+      <div class="card-image">
+        <div class="card-top">
+          <h4>Top 3...</h4>
+          <button class="card-btn">Guardar</button>
+        </div>
+        <img class="image" src="https://picsum.photos/id/791/200/300" alt="">
+        <div class="card-bottom">
+          <img class="icon-card" src="images/arrow-interface-send-svgrepo-com.svg" alt="">
+          <img class="icon-card" src="images/three-small-dots-svgrepo-com.svg" alt="">
+        </div>
+      </div>
+      <p class="card-p">5 Tendencias de...</p>
+    </article>
+
   </main>
+  <nav id="nav-bar-pinterest-movil">
+    <h3 class="modified">Navegar</h3>
+    <h3>Ver</h3>
+  </nav>
+  <footer>
+    <img src="images/home-fill-svgrepo-com.svg" alt="">
+    <img src="images/search-svgrepoblack-com (1).svg" alt="">
+    <img src="images/plus-svgrepo-com.svg" alt="">
+    <img src="images/message-svgrepo-com.svg" alt="">
+    <img src="images/user-svgrepo-com.svg" alt="">
+  </footer>
 </body>
 </html>

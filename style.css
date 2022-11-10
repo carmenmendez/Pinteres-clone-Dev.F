@@ -1,3 +1,4 @@
+/* Globals */
 * {
   margin: 0;
   padding: 0;
@@ -9,61 +10,202 @@ body {
   font-size: 17px;
 }
 
-nav{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  
+a {
+  text-decoration: none;
 }
 
+/* HEADER */
 #nav-bar-pinterest {
-  padding: 15px 30px;
+  display: none;
   position: fixed;
+  top: 0;
 }
 
-#pinterest-icon {
+#nav-bar-pinterest-movil {
+  position: fixed;
+  top: 0;
+  display: flex;
+  gap: 10px;
+  padding: 10px 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(251, 251, 251);
+}
+
+#nav-bar-pinterest-movil .modified {
+  border-bottom: solid 4px rgb(16, 16, 16);
+}
+
+/* MAIN */
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 56px 92px;
+}
+
+.card-image .image {
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 600px;
+  width: 100%;
+}
+
+article:hover .card-image .image {
+  filter: brightness(0.4);
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-p {
+  padding: 5px;
+}
+
+img.icon-card {
   height: 25px;
   width: 25px;
+  border-radius: 50px;
+  padding: 5px;
+  margin-left: 10px;
+  background-color: rgb(248, 249, 250);
 }
 
-.special-initial-a {
-  background-color: rgb(16, 16, 16);
+article .card-top {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: -60px; /* Oculto en su estado inicia */
+  padding: 15px 15px;
+  width: 100%;
+  z-index: 1;
+  color: rgb(251,251,251)
+}
+
+article:hover .card-top {
+  top: 0;
+}
+
+article .card-bottom {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  bottom: -42px;
+  padding: 15px 15px;
+  width: 100%;
+  z-index: 2;
+}
+
+article:hover .card-bottom {
+  bottom: 0;
+}
+
+
+button.card-btn {
+  background-color: rgb(232, 0, 33);
   color: rgb(251, 251, 251);
-  height: 50px;
-  width: 75px;
+  border: none;
   border-radius: 50px;
-  text-decoration: none;
-  display: inline-block;
+  height: 30px;
+  padding: 0 10px;
 }
 
-.special-a {
-  color: rgb(16, 16, 16);
-  height: 50px;
-  width: 75px;
-  border-radius: 50px;
-  text-decoration: none;
+footer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(251, 251, 251);
 }
 
-button {
-  background-color: rgb(255, 255, 255);
-  border: solid rgb(255, 255, 255);
-  font-size: 18px;
-}
-
-input {
-  background-color: rgb(233, 233, 233);
-  color: rgb(51, 51, 51);
-  font-size: 18px;
-  border: solid rgb(233, 233, 233);
-  border-radius: 50px;
-  height: 50px;
-  padding-left: 15px;
-}
-
-.icon-nav {
+footer img {
   height: 25px;
   width: 25px;
+  border-radius: 50px;
 }
 
-.profile-img {
-  border-radius: 50px;
+@media screen and (min-width: 769px) {
+  /* HEADER */
+  #nav-bar-pinterest-movil {
+    display: none;
+  }
+  #nav-bar-pinterest {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    gap: 20px;
+    padding: 15px 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #nav-bar-pinterest .nav-left, #nav-bar-pinterest .nav-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  #pinterest-icon {
+    height: 25px;
+    width: 25px;
+  }
+  
+  #nav-bar-pinterest .nav-button {
+    padding: 0 20px;
+    color: rgb(16, 16, 16);
+    height: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #nav-bar-pinterest .nav-button.active {
+    background-color: rgb(16, 16, 16);
+    color: rgb(251,251,251);
+  }
+  
+  #nav-bar-pinterest button {
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(255, 255, 255);
+    font-size: 18px;
+  }
+  
+  #nav-bar-pinterest input {
+    background-color: rgb(233, 233, 233);
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    border: solid rgb(233, 233, 233);
+    border-radius: 50px;
+    height: 50px;
+    padding-left: 15px;
+  }
+  
+  .icon-nav {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .profile-img {
+    border-radius: 50px;
+  }
+
+  /* Main */
+  #content {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  footer {
+    display: none;
+  }
 }
